@@ -4,19 +4,6 @@ number = random.randint(1, 100)
 
 guesses = 0
 
-def convert(toConvert):
-    if toConvert == 0:
-        return 0
-    elif toConvert == 1:
-        return 1
-    elif toConvert == 2:
-        return 2
-    elif toConvert == 3:
-        return 3
-    elif toConvert == 4:
-        return 4
-    elif toConvert == 5:
-        return 5
 
 while guesses < 5:
     numberIn = int(input("Guess the number: "))
@@ -31,7 +18,7 @@ while guesses < 5:
     elif numberIn < number:
         print("Too low")
     else:
-        print("You got it, in " + str(convert(guesses)) + " guesses")
+        print("You got it, in " + str(guesses) + " guesses")
         break
     
     guesses += 1
